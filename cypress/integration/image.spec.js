@@ -8,10 +8,19 @@ describe('Visual Regression', () => {
 			it(`Should match ${page} in resolution ${size}`, () => {
 				const currentTime = new Date(Date.UTC(2020, 1, 1)).getDate(currentTime)
 				cy.clock()
+
 				cy.setResolution(size)
 				cy.visit(page)
+
 				cy.matchImageSnapshot()
 			})
 		})
+	})
+})
+
+describe('Single Element Snapshot', () => {
+	it('Should macth a single element on the page', () => {
+		cy.visit('http://example.com')
+		cy.get('h1').matchImageSnapshot()
 	})
 })
