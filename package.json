@@ -1,30 +1,30 @@
 {
-  "name": "cy-visual-tests",
-  "version": "1.0.0",
-  "description": "visual regresion tests using cypress",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/ferisjuan/cypress-visual-tests.git"
-  },
-  "keywords": [
-    "cypress",
-    "visual",
-    "testing",
-    "snapshots"
-  ],
-  "author": "Juan Feris",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ferisjuan/cypress-visual-tests/issues"
-  },
-  "homepage": "https://github.com/ferisjuan/cypress-visual-tests#readme",
-  "dependencies": {
-    "cypress": "^5.5.0",
-    "cypress-image-snapshot": "^3.1.1",
-    "prettier": "^2.1.2"
-  }
+	"name": "cy-visual-tests",
+	"version": "1.0.0",
+	"description": "visual regresion tests using cypress",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/ferisjuan/cypress-visual-tests.git"
+	},
+	"keywords": [
+		"cypress",
+		"visual",
+		"testing",
+		"snapshots"
+	],
+	"author": "Juan Feris",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ferisjuan/cypress-visual-tests/issues"
+	},
+	"homepage": "https://github.com/ferisjuan/cypress-visual-tests#readme",
+	"dependencies": {
+		"cypress": "^5.5.0",
+		"cypress-image-snapshot": "^3.1.1",
+		"prettier": "^2.1.2"
+	}
 }
