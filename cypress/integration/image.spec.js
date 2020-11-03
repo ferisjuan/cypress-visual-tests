@@ -21,6 +21,10 @@ describe('Visual Regression', () => {
 describe('Single Element Snapshot', () => {
 	it('Should macth a single element on the page', () => {
 		cy.visit('http://example.com')
-		cy.get('h1').matchImageSnapshot()
+		// dont override the following whe in production
+		cy.get('h1').matchImageSnapshot({
+			failureTreshold: 10.0,
+			failureTresholdType: 'pixels',
+		})
 	})
 })
