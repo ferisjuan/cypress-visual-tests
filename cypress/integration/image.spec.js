@@ -1,8 +1,15 @@
-describe('Visual Regression', () => {
-	it('My first visual regression test', () => {
-		cy.visit('http://example.com')
+const pages = ['http://example.com']
 
-		// compare sections
-		cy.matchImageSnapshot()
+const sizes = ['iphone-6', 'ipad-2', [1200, 800]]
+
+describe('Visual Regression', () => {
+	sizes.forEach(size => {
+		pages.forEach(page => {
+			it(`Should match ${page} in resolution ${size}`, () => {
+				cy.setResolution(size)
+				cy.visit(page)
+				cy.matchImageSnapshot()
+			})
+		})
 	})
 })
