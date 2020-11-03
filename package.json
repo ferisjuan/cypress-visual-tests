@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ferisjuan/cypress-visual-tests#readme",
   "dependencies": {
     "cypress": "^5.5.0",
-    "cypress-image-snapshot": "^3.1.1"
+    "cypress-image-snapshot": "^3.1.1",
+    "prettier": "^2.1.2"
   }
 }
